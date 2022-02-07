@@ -20,3 +20,4 @@ Rental(Car) .
 1. ER діаграма у файлі ERDiagram.pdf
 2. Скрипти створення бази даних у файлі (Lab1DB.sql, budget.sql, degree.sql, group.sql,
 subject_area.sql, user_.sql, FilledDB.sql, Roles.sql)
+3. Посилання на таблицю https://dbdiagram.io/d/6200f44c85022f4ee54d3a1d
