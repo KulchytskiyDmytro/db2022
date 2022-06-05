@@ -17,4 +17,4 @@
 Додатки:
 1. ER діаграма - Diagram.pdf
 2. Скрипти бази даних - Postgre.sql
-3. Посилання на діаграму - https://dbdiagram.io/d/6200fb7b85022f4ee54d8352
+3. Посилання на діаграму - https://dbdiagram.io/d/6200f44c85022f4ee54d3a1d
