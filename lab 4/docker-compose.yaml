@@ -1,0 +1,16 @@
+services:
+  server:
+    build: ./mean-backend
+    volumes:
+      - .:/app
+    ports:
+      - "5019:5019"
+    restart: always
+    command: npm start
+  web:
+    build: ./mean-frontend
+    volumes:
+      - .:/app
+    ports:
+      - "8080:80"
+    restart: always

@@ -1,0 +1,100 @@
+<div class="hero_area">
+  <!-- header section strats -->
+  <div class="brand_box">
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active">
+      <span> Tea Shop </span>
+    </a>
+  </div>
+  <!-- end header section -->
+</div>
+
+<!-- nav section -->
+
+<section class="nav_section">
+  <div class="container" style="justify-content: center !important">
+    <span
+      style="color: #ffffff; text-align: center; display: block; padding: 5px 0"
+    >
+      Add new Tea to the site :)</span
+    >
+  </div>
+</section>
+
+<!-- end nav section -->
+
+<!-- contact section -->
+<section class="contact_section layout_padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="offset-lg-2 col-md-10 offset-md-1">
+        <div class="heading_container">
+          <hr />
+          <h2>Add Tea</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout_padding2-top">
+      <div class="row" style="justify-content: center">
+        <div class="col-6">
+          <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+            <div class="contact_form-container">
+              <div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    formControlName="name"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="message_input"
+                    formControlName="description"
+                    placeholder="Description"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Image url"
+                    formControlName="image"
+                    required
+                  />
+                </div>
+                <div>
+                  <select formControlName="sort" type="" required>
+                    <option disabled>Select color of Tea</option>
+                    <option value="Dark" selected>Dark</option>
+                    <option value="Green">Green</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+                <div>
+                  <select formControlName="leaves" type="" required>
+                    <option disabled>Select leaves size</option>
+                    <option value="Large" selected>Large</option>
+                    <option value="Small">Small</option>
+                  </select>
+                </div>
+                <div>
+                  <input formControlName="price" type="number" placeholder="Price" required />
+                </div>
+                <div>
+                  <button type="submit">Add</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end contact section -->
+
+<!-- info section -->
